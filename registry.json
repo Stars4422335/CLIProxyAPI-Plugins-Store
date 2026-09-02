@@ -732,6 +732,22 @@
         "Codex",
         "Responses"
       ]
+    },
+    {
+      "id": "aggregate-usage",
+      "name": "Aggregate Usage",
+      "description": "Aggregates quota and usage for one logical CPAMP account across multiple CLIProxyAPI nodes, with a management dashboard, history, and DingTalk reporting.",
+      "author": "Stars4422335",
+      "version": "0.3.1",
+      "repository": "https://github.com/Stars4422335/cpa-plugin-aggregate-usage",
+      "homepage": "https://github.com/Stars4422335/cpa-plugin-aggregate-usage",
+      "license": "MIT",
+      "tags": [
+        "Management",
+        "Usage",
+        "Quota",
+        "Dashboard"
+      ]
     }
   ]
 }

@@ -206,9 +206,10 @@
     {
       "id": "model-mapper",
       "name": "Model Mapper",
-      "description": "Maps requested CLIProxyAPI model names to upstream models across Claude, OpenAI Chat Completions, and OpenAI Responses.",
+      "description": "Maps requested model names to upstream models using ordered exact, wildcard, case-conversion, and authenticated API-key-scoped rules. Use it to switch upstream models without changing client configuration, consolidate aliases, or route authenticated callers to different models.",
       "author": "DoingDog",
       "repository": "https://github.com/DoingDog/cpa-plugin-model-mapper",
+      "logo": "https://raw.githubusercontent.com/DoingDog/cpa-plugin-model-mapper/main/logo.png",
       "homepage": "https://github.com/DoingDog/cpa-plugin-model-mapper",
       "license": "Unlicense",
       "tags": [
@@ -733,6 +734,16 @@
         "Codex",
         "Responses"
       ]
+    },
+    {
+      "id": "censorship",
+      "name": "Censorship",
+      "description": "Filters selected text in CLIProxyAPI request bodies with strict format and role scopes, supporting block, strip, and zero-width obfuscation modes. Use it to reject or transform configured terms before upstream execution; it never inspects or changes model responses.",
+      "author": "DoingDog",
+      "repository": "https://github.com/DoingDog/cpa-plugin-censorship",
+      "logo": "https://raw.githubusercontent.com/DoingDog/cpa-plugin-censorship/main/logo.png",
+      "homepage": "https://github.com/DoingDog/cpa-plugin-censorship",
+      "license": "Unlicense"
     },
     {
       "id": "cpa-key-billing",

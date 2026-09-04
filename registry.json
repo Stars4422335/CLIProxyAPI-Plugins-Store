@@ -206,9 +206,10 @@
     {
       "id": "model-mapper",
       "name": "Model Mapper",
-      "description": "Maps requested CLIProxyAPI model names to upstream models across Claude, OpenAI Chat Completions, and OpenAI Responses.",
+      "description": "Maps requested model names to upstream models using ordered exact, wildcard, case-conversion, and authenticated API-key-scoped rules. Use it to switch upstream models without changing client configuration, consolidate aliases, or route authenticated callers to different models.",
       "author": "DoingDog",
       "repository": "https://github.com/DoingDog/cpa-plugin-model-mapper",
+      "logo": "https://raw.githubusercontent.com/DoingDog/cpa-plugin-model-mapper/main/logo.png",
       "homepage": "https://github.com/DoingDog/cpa-plugin-model-mapper",
       "license": "Unlicense",
       "tags": [
@@ -329,8 +330,9 @@
       "name": "CPA Account Config Manager",
       "description": "Manages CLIProxyAPI account configurations with redacted account inspection, multi-format import and export, usage visibility, safe batch edits, persistent defaults, and in-plugin account CRUD.",
       "author": "Mxucc",
-      "version": "0.2.0",
+      "version": "0.3.1372",
       "repository": "https://github.com/Mxucc/cpa-account-config-manager",
+      "logo": "https://raw.githubusercontent.com/Mxucc/cpa-account-config-manager/main/internal/manager/cpama.svg",
       "homepage": "https://github.com/Mxucc/cpa-account-config-manager",
       "license": "MIT",
       "tags": [
@@ -734,6 +736,16 @@
       ]
     },
     {
+      "id": "censorship",
+      "name": "Censorship",
+      "description": "Filters selected text in CLIProxyAPI request bodies with strict format and role scopes, supporting block, strip, and zero-width obfuscation modes. Use it to reject or transform configured terms before upstream execution; it never inspects or changes model responses.",
+      "author": "DoingDog",
+      "repository": "https://github.com/DoingDog/cpa-plugin-censorship",
+      "logo": "https://raw.githubusercontent.com/DoingDog/cpa-plugin-censorship/main/logo.png",
+      "homepage": "https://github.com/DoingDog/cpa-plugin-censorship",
+      "license": "Unlicense"
+    },
+    {
       "id": "aggregate-usage",
       "name": "Aggregate Usage",
       "description": "Aggregates quota and usage for one logical CPAMP account across multiple CLIProxyAPI nodes, with a management dashboard, history, and DingTalk reporting.",
@@ -747,6 +759,22 @@
         "Usage",
         "Quota",
         "Dashboard"
+      ]
+    },
+    {
+      "id": "cpa-key-billing",
+      "name": "CPA Key Billing",
+      "description": "Adds downstream API key billing with subscription quotas, model access controls, concurrency limits, and an embedded management UI.",
+      "author": "haowang02",
+      "version": "1.1.2",
+      "repository": "https://github.com/haowang02/cpa-plugin-key-billing",
+      "homepage": "https://github.com/haowang02/cpa-plugin-key-billing",
+      "license": "MIT",
+      "tags": [
+        "Management",
+        "Billing",
+        "Quota",
+        "Access Control"
       ]
     }
   ]
